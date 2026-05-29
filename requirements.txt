@@ -1,0 +1,8 @@
+pandas
+scikit-learn
+matplotlib
+seaborn
+kagglehub
+openai
+python-dotenv
+statsmodels

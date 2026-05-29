@@ -1,0 +1,391 @@
+========== COMPREHENSIVE MODEL EVALUATION SCORES ==========
+
+{
+    "classification": {
+        "svm": {
+            "accuracy": 0.905,
+            "f1_score": 0.9055095653269144,
+            "expected_commercial_loss_usd": 2470000.0
+        },
+        "random_forest": {
+            "accuracy": 0.98,
+            "f1_score": 0.9799900568181817,
+            "expected_commercial_loss_usd": 520000.0,
+            "top_business_drivers": {
+                "price_usd": 0.32080100819475915,
+                "horsepower": 0.1451793985828359,
+                "torque_nm": 0.125242959086613,
+                "warranty_years": 0.03729675504541754,
+                "charging_speed_kw": 0.03357903774765921
+            }
+        }
+    },
+    "clustering": {
+        "model": "K-Means",
+        "optimal_clusters_k": 3,
+        "silhouette_score": -0.005300730369292929,
+        "pca_variance_explained": [
+            0.04192102009153275,
+            0.035324853720005586
+        ],
+        "cluster_profiles": {
+            "Cluster_0": "Market Segment 0 (Awaiting LLM qualitative interpretation based on centroids)",
+            "Cluster_1": "Market Segment 1 (Awaiting LLM qualitative interpretation based on centroids)",
+            "Cluster_2": "Market Segment 2 (Awaiting LLM qualitative interpretation based on centroids)"
+        }
+    },
+    "regression": {
+        "model": "Ordinary Least Squares (OLS)",
+        "r_squared": 0.9216333938745838,
+        "significant_factors": {
+            "horsepower": {
+                "coefficient": -11232.455010399119,
+                "p_value": 0.04592012771804691
+            },
+            "torque_nm": {
+                "coefficient": 11517.505094019361,
+                "p_value": 0.03427824892989003
+            },
+            "brand_BMW": {
+                "coefficient": -9512.49864100293,
+                "p_value": 2.10882836468693e-124
+            },
+            "brand_BYD": {
+                "coefficient": 9549.87253349137,
+                "p_value": 1.2152572767358602e-118
+            },
+            "brand_Fisker": {
+                "coefficient": -6527.332809873878,
+                "p_value": 4.691264693798769e-73
+            },
+            "brand_Ford": {
+                "coefficient": -10707.58277377743,
+                "p_value": 4.901059664547979e-138
+            },
+            "brand_GM/Chevrolet": {
+                "coefficient": -15536.451653431708,
+                "p_value": 4.6252104962505985e-225
+            },
+            "brand_Honda": {
+                "coefficient": -1236.4492450490447,
+                "p_value": 0.00026674075857568893
+            },
+            "brand_Hyundai": {
+                "coefficient": -2398.874813221478,
+                "p_value": 3.5076862893731977e-14
+            },
+            "brand_Kia": {
+                "coefficient": -2447.208523073412,
+                "p_value": 3.891506444180763e-15
+            },
+            "brand_Lucid": {
+                "coefficient": -2981.214936759317,
+                "p_value": 2.1424328614968707e-14
+            },
+            "brand_Mercedes": {
+                "coefficient": -7066.272685402949,
+                "p_value": 3.1266088423771025e-49
+            },
+            "brand_NIO": {
+                "coefficient": -5828.510464433553,
+                "p_value": 2.872088251996682e-60
+            },
+            "brand_Polestar": {
+                "coefficient": -4839.390375595534,
+                "p_value": 5.904621405886171e-08
+            },
+            "brand_Porsche": {
+                "coefficient": -4050.200320325558,
+                "p_value": 5.048872581211395e-22
+            },
+            "brand_Rivian": {
+                "coefficient": -7891.570920066022,
+                "p_value": 1.1095731145723765e-100
+            },
+            "brand_Tesla": {
+                "coefficient": 23992.210909712645,
+                "p_value": 3.5288966804289405e-213
+            },
+            "brand_Toyota": {
+                "coefficient": -5310.015889726934,
+                "p_value": 8.211780671574511e-94
+            },
+            "brand_Volkswagen": {
+                "coefficient": 19594.444621188006,
+                "p_value": 0.0
+            },
+            "brand_Volvo": {
+                "coefficient": -2381.6938415340765,
+                "p_value": 1.305602836951208e-12
+            },
+            "brand_Xiaomi": {
+                "coefficient": -3349.321509542023,
+                "p_value": 3.5718424547351274e-22
+            },
+            "model_Air": {
+                "coefficient": -2781.249128661573,
+                "p_value": 1.3212185866248101e-09
+            },
+            "model_Atto 3": {
+                "coefficient": 3967.3395802834502,
+                "p_value": 5.059027473793102e-10
+            },
+            "model_Blazer EV": {
+                "coefficient": -6685.85657050996,
+                "p_value": 2.2239611465695523e-25
+            },
+            "model_Bolt EUV": {
+                "coefficient": -7016.097303332535,
+                "p_value": 7.053299676488352e-28
+            },
+            "model_Bolt EV": {
+                "coefficient": -6906.792878483257,
+                "p_value": 1.2614558535627159e-26
+            },
+            "model_C40 Recharge": {
+                "coefficient": -1335.1603921152073,
+                "p_value": 0.024299566290502693
+            },
+            "model_Dolphin": {
+                "coefficient": 3474.2692542414597,
+                "p_value": 3.460500546987812e-08
+            },
+            "model_E-Transit": {
+                "coefficient": -5657.33897056069,
+                "p_value": 3.112627144242966e-19
+            },
+            "model_EC6": {
+                "coefficient": -2962.7550818756454,
+                "p_value": 2.301191822393648e-06
+            },
+            "model_EL6": {
+                "coefficient": -1958.6156419417305,
+                "p_value": 0.002164858989413162
+            },
+            "model_EL8": {
+                "coefficient": -3575.056188945333,
+                "p_value": 1.201963128728075e-09
+            },
+            "model_EQC": {
+                "coefficient": -3630.4806016020593,
+                "p_value": 2.1102303749067274e-08
+            },
+            "model_EQE": {
+                "coefficient": -2744.958694586374,
+                "p_value": 2.2798567632471403e-05
+            },
+            "model_EQG": {
+                "coefficient": -3618.0773421594677,
+                "p_value": 1.4856799128337553e-08
+            },
+            "model_EQS": {
+                "coefficient": -2550.7012137366983,
+                "p_value": 8.591227991156023e-05
+            },
+            "model_ET6": {
+                "coefficient": -2796.9308278890867,
+                "p_value": 8.47895849778542e-06
+            },
+            "model_EV6": {
+                "coefficient": -1749.2757719415476,
+                "p_value": 0.005503020116738893
+            },
+            "model_Equinox EV": {
+                "coefficient": -6866.054000120303,
+                "p_value": 1.1590357320387676e-24
+            },
+            "model_Explorer EV": {
+                "coefficient": -6334.921079638439,
+                "p_value": 1.5347764815880555e-25
+            },
+            "model_F-150 Lightning": {
+                "coefficient": -3531.4131998532484,
+                "p_value": 2.2699642757761452e-07
+            },
+            "model_GLE EV": {
+                "coefficient": -2916.008456307117,
+                "p_value": 4.786073070351942e-06
+            },
+            "model_ID. Aero": {
+                "coefficient": 8302.15251564971,
+                "p_value": 1.75577548460073e-38
+            },
+            "model_ID. Buzz": {
+                "coefficient": 8082.100212016516,
+                "p_value": 1.8301415489970977e-36
+            },
+            "model_ID.3": {
+                "coefficient": 8296.681869349322,
+                "p_value": 1.2650047643830873e-38
+            },
+            "model_ID.4": {
+                "coefficient": 9562.850593888035,
+                "p_value": 3.797763594187728e-50
+            },
+            "model_ID.5": {
+                "coefficient": 7790.535287626426,
+                "p_value": 1.5389451223996428e-32
+            },
+            "model_Ioniq 5": {
+                "coefficient": -1705.2255887511421,
+                "p_value": 0.004751920273285697
+            },
+            "model_Kona Electric": {
+                "coefficient": -2172.6063916156527,
+                "p_value": 0.0005599071108480778
+            },
+            "model_Macan Electric": {
+                "coefficient": -2891.798877375384,
+                "p_value": 2.994688358137482e-07
+            },
+            "model_Max": {
+                "coefficient": 4528.472929027026,
+                "p_value": 2.912316176347852e-12
+            },
+            "model_Model S": {
+                "coefficient": -1502.5922161519293,
+                "p_value": 0.022104305280227624
+            },
+            "model_Model X": {
+                "coefficient": -2788.598647295984,
+                "p_value": 2.1649224414751863e-05
+            },
+            "model_Model Y": {
+                "coefficient": 53496.917682405096,
+                "p_value": 0.0
+            },
+            "model_Mustang Mach-E": {
+                "coefficient": -5209.719292218908,
+                "p_value": 1.8388339102031994e-16
+            },
+            "model_Niro EV": {
+                "coefficient": -1546.7080435690355,
+                "p_value": 0.01224524019634041
+            },
+            "model_Ocean": {
+                "coefficient": -4116.052047910659,
+                "p_value": 3.215918906671423e-13
+            },
+            "model_Q4 e-tron": {
+                "coefficient": -6229.619688908066,
+                "p_value": 2.510028449939275e-19
+            },
+            "model_Q6 e-tron": {
+                "coefficient": -6769.520488706564,
+                "p_value": 6.24928502089049e-23
+            },
+            "model_Qin": {
+                "coefficient": 4512.636570099338,
+                "p_value": 2.628216053612457e-12
+            },
+            "model_R1S": {
+                "coefficient": -4358.874233190643,
+                "p_value": 1.393166347665631e-12
+            },
+            "model_R1T": {
+                "coefficient": -2189.9942481890384,
+                "p_value": 0.0011106870466848925
+            },
+            "model_R2": {
+                "coefficient": -4290.689795036944,
+                "p_value": 8.96306140223775e-13
+            },
+            "model_R3": {
+                "coefficient": -4400.484187519823,
+                "p_value": 1.9683326964614344e-13
+            },
+            "model_Ronin": {
+                "coefficient": -5047.081009950919,
+                "p_value": 8.849739380143893e-22
+            },
+            "model_SU7": {
+                "coefficient": -3349.321509542029,
+                "p_value": 3.5718424547346647e-22
+            },
+            "model_Seagull": {
+                "coefficient": 4270.927579808998,
+                "p_value": 3.72146670175323e-11
+            },
+            "model_Silverado EV": {
+                "coefficient": -6217.884134394161,
+                "p_value": 1.6071362954504349e-21
+            },
+            "model_Taycan": {
+                "coefficient": -2825.981557241598,
+                "p_value": 7.724063967840538e-07
+            },
+            "model_XC90 Recharge": {
+                "coefficient": -1875.100481693158,
+                "p_value": 0.0005252671214503963
+            },
+            "model_Yuan Plus": {
+                "coefficient": 2703.5760154197615,
+                "p_value": 3.681361767691409e-05
+            },
+            "model_bZ Compact SUV": {
+                "coefficient": -3277.8290852218165,
+                "p_value": 2.939919216269435e-09
+            },
+            "model_bZ4X": {
+                "coefficient": -4153.884226045764,
+                "p_value": 5.4307848988389045e-17
+            },
+            "model_e-tron": {
+                "coefficient": -7759.56549042611,
+                "p_value": 1.50131666200993e-29
+            },
+            "model_e-tron GT": {
+                "coefficient": -6166.511541804786,
+                "p_value": 2.8522116646813313e-19
+            },
+            "model_i3": {
+                "coefficient": -4418.409745301215,
+                "p_value": 8.62231878951066e-13
+            },
+            "model_i4": {
+                "coefficient": -3899.5695486921077,
+                "p_value": 1.0369472361670282e-09
+            },
+            "model_i5": {
+                "coefficient": -4138.160150746032,
+                "p_value": 4.9563697449956116e-11
+            },
+            "model_i7": {
+                "coefficient": -3893.3289181789232,
+                "p_value": 7.249078163214305e-10
+            },
+            "model_iX": {
+                "coefficient": -4276.30873738051,
+                "p_value": 2.9391381568057093e-11
+            },
+            "drive_type_FWD": {
+                "coefficient": -1617.847201065963,
+                "p_value": 0.04840621261876869
+            },
+            "body_type_Sedan": {
+                "coefficient": -2556.4705168932437,
+                "p_value": 0.005032522046196134
+            },
+            "country_of_origin_Germany": {
+                "coefficient": -2683.9120447295268,
+                "p_value": 4.7528434726629106e-14
+            },
+            "country_of_origin_Japan": {
+                "coefficient": -5457.143990769376,
+                "p_value": 6.3721999739342676e-102
+            },
+            "country_of_origin_South Korea": {
+                "coefficient": -3584.698786898413,
+                "p_value": 4.1403053172159754e-35
+            },
+            "country_of_origin_Sweden": {
+                "coefficient": -4982.195923049403,
+                "p_value": 4.136985215598508e-25
+            },
+            "country_of_origin_US": {
+                "coefficient": 2678.6873511113126,
+                "p_value": 3.20544889231599e-15
+            }
+        }
+    }
+}
