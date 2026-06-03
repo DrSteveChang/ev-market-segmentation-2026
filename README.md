@@ -7,6 +7,8 @@ This repository contains a production-grade, end-to-end Machine Learning pipelin
 ## 🏗️ Architecture & Core Modules
 The pipeline is fully modularized, mapping directly to advanced machine learning curricula:
 
+* **Master Orchestrator (`main.py`)**
+  * The central execution hub. Automates the end-to-end CRISP-DM workflow: triggering data ingestion, orchestrating parallel model training, executing risk evaluations, and calling the LLM reporting API.
 * **Data Engineering (`src/data_pipeline.py`)**
   * Automated data ingestion via the Kaggle API.
   * Matrix virtualization, cleaning, and preprocessing for multi-task downstream learning.
@@ -53,5 +55,6 @@ EV-MARKET-SEGMENTATION-2026/
 │   ├── config.py                                       # Global system configurations
 │   ├── data_pipeline.py                                # Automated ETL and feature engineering
 │   └── evaluation.py                                   # Asymmetric cost matrix logic
+├── main.py                                             # ⚡ Master orchestrator pipeline entry point
 ├── requirements.txt
 └── .gitignore
